@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Organisasjonsnummer fra epost fra brønnøysund</title>
+    <script src="script.js"></script>
 </head>
 <body>
-    <p>Hello World!</p>
+    <h2 id="label">Lim inn teksten fra eposten her:</h2>
+    <div id="container">
+        <div id="input-container">
+            <div>
+                <textarea name="text" id="input" placeholder="Her limer du inn teksten fra eposten..."></textarea>
+            </div>
+            <!-- <input type="text" id="input-text"> -->
+            <button id="input-button" onclick="processText()">Finn org.nr</button>
+        </div>
+        <div id="output-container">
+                <div id="output">
+                
+                </div>
+
+            <button id="output-button" onclick="copyToClipboard()">Kopier til utklippstavlen!</button>
+        </div>
+    </div>
 </body>
 </html>
