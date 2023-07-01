@@ -64,7 +64,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black-colour-standard);
 }
 
 .pageHeader {
@@ -218,7 +218,7 @@ button {
   font-size: 0.8rem;
   width: 12rem;
   height: auto;
-
+  color: var(--black-colour-standard);
 }
  
 .btnAcc {

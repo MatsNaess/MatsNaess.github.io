@@ -60,7 +60,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: var(--black-colour-standard);
 }
 
 img.emoji {
@@ -89,7 +89,7 @@ button {
   font-weight: 500;
   padding: 0.7rem 1.1rem 0.7rem 1.1rem;
   font-size: 0.8rem;
-
+  color: var(--black-colour-standard);
   width: 12rem;
   height: auto;
 
