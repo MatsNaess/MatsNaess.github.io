@@ -29,7 +29,7 @@ body {
   display: none;
 }
 .pageWrapper {
-  width: min(1100px, calc(70% + 100px));
+  width: min(1100px, calc(70% + 80px));
   margin-left: auto;
   margin-right: auto;
 }
@@ -219,7 +219,7 @@ button:hover {
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 720px) {
+@media (max-width: 750px) {
 
   button.header{
     width: 3rem;
@@ -235,8 +235,8 @@ button:hover {
     max-width: 100%;
   }
 
-  h1{
-    font-size: 2rem;
+  .page-title {
+    font-size: 1.6rem;
   }
 
   .large {
@@ -269,4 +269,96 @@ button:hover {
     padding-top: 4rem;
   }
 }
+
+@media (max-width: 500px) {
+  .page-title {
+    font-size: 1.6rem;
+  }
+  button.header{
+    width: 2.1rem;
+    height: 2.1rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  #infoTitle {
+    font-size: 1.5rem;
+  }
+
+  .imageCropper {
+    width: calc(var(--image-size)*0.55);
+    height: calc(var(--image-size)*0.55);
+  }
+
+  .polaroid {
+    padding: 5px 5px 15px 5px;
+  }
+
+  #bilde1:after, #bilde2:after {
+    font-size: 1rem;
+  }
+
+  .priceItem h3 {
+    font-size: 1.1rem;
+  }
+
+  .price {
+    font-size: 0.8rem;
+  }
+
+  .under {
+    font-size: .6rem;
+  }
+
+  .lastCTA p {
+    text-align: center;
+    width: 70%;
+  }
+}
+
+@media (max-width: 400px) {
+  .page-title{
+    font-size: 1.2rem;
+  }
+  button.header{
+    width: 2rem;
+    height: 2rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small svg {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .priceItem h3 {
+    font-size: 1rem;
+  }
+
+  .item1 {
+    flex: 90%;
+  }
+  .item2 {
+    flex: 90%;
+  }
+  .item3 {
+    flex: 90%;
+  }
+  .item4 {
+    flex: 90%;
+  }
+}
+
+
+
 
