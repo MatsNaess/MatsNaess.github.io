@@ -1,30 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Organisasjonsnummer fra epost fra brønnøysund</title>
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viminal Bajo Albir</title>
+ 
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@500&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/emf0zjj.css">
+  <script src="main.js"></script>
 </head>
-<body>
-    <h2 id="label">Lim inn teksten fra eposten her:</h2>
-    <div id="container">
-        <div id="input-container">
-            <div>
-                <textarea name="text" id="input" placeholder="Her limer du inn teksten fra eposten..."></textarea>
-            </div>
-            <!-- <input type="text" id="input-text"> -->
-            <button id="input-button" onclick="processText()">Finn org.nr</button>
-        </div>
-        <div id="output-container">
-                <div id="output">
-                
-                </div>
 
-            <button id="output-button" onclick="copyToClipboard()">Kopier til utklippstavlen!</button>
+<body>
+  <div class="pageWrapper">
+    
+    <header>
+      <div class="title-wrapper"  style="order: 2">
+      <a href="index.html">
+          <h1 class="page-title">VIMINAL BAJO ALBIR</h1>
+      </a>
+      </div>
+  
+      <div class="inquiry large"  style="order: 1">
+          <a href="mailto:epost@epost.no">
+              <button class="btnAcc header">Send forespørsel</button>
+          </a>
+      </div>
+  
+      <div class="otherPage large" style="order: 3">
+          <a href="info.html">
+              <button class="btnNotAcc header">Mer om leiligheten</button>
+          </a>
+      </div>
+
+      <div class="inquiry small"  style="order: 1">
+          <a href="mailto:epost@epost.no">
+              <button class="btnAcc header"> 
+                  <svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d=" M 900 163C 934 163 962 191 962 225C 962 225 962 800 962 800C 962 834 934 862 900 862C 900 862 100 862 100 862C 66 862 38 834 38 800C 38 800 38 225 38 225C 38 191 66 163 100 163C 100 163 900 163 900 163M 113 355C 113 355 421 569 421 569C 455 592 479 600 500 600C 521 600 545 592 579 569C 579 569 887 355 887 355C 887 355 887 238 887 238C 887 238 113 238 113 238C 113 238 113 355 113 355M 113 788C 113 788 887 788 887 788C 887 788 887 447 887 447C 887 447 621 631 621 631C 621 631 621 631 621 631C 580 658 541 675 500 675C 459 675 420 658 379 631C 379 631 379 631 379 631C 379 631 113 447 113 447C 113 447 113 788 113 788"/></svg>
+              </button>
+          </a>
+      </div>
+  
+      <div class="otherPage small" style="order: 3">
+          <a href="info.html">
+              <button class="btnNotAcc header">
+                  <svg width="24" height="24" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d=" M 505 9C 557 13 586 62 622 94C 742 214 863 334 982 455C 1010 484 987 522 961 542C 937 563 919 593 888 603C 887 691 889 779 886 867C 884 917 832 944 786 938C 719 936 652 940 585 936C 547 925 533 886 538 851C 538 813 538 775 538 738C 513 738 488 738 463 738C 462 788 465 840 461 890C 450 928 411 942 376 938C 311 937 247 939 183 936C 133 934 106 882 113 836C 113 759 113 681 113 603C 77 590 56 555 28 531C -4 509 0 461 31 441C 167 305 303 168 440 33C 457 17 481 7 505 9C 505 9 505 9 505 9M 487 92C 355 224 223 356 91 488C 103 497 115 517 127 520C 240 408 352 294 465 183C 496 155 535 176 557 204C 663 310 769 416 875 522C 885 510 904 498 908 486C 774 353 642 219 509 87C 501 80 492 85 487 92C 487 92 487 92 487 92M 192 562C 183 576 190 597 188 615C 188 697 186 779 189 861C 255 864 321 862 388 863C 389 811 385 758 390 707C 399 669 441 659 474 663C 509 665 546 657 579 669C 620 689 612 737 613 774C 613 803 613 833 613 863C 679 862 745 864 811 861C 814 763 812 664 813 566C 709 461 604 357 500 253C 397 356 294 459 192 562C 192 562 192 562 192 562M 389 864C 390 866 390 864 389 864C 389 864 389 864 389 864M 610 865C 612 864 610 864 610 865C 610 865 610 865 610 865"/></svg>
+              </button>
+          </a>
+      </div>
+  </header>
+    
+      <div class="pageHeader">
+        <h2 id="infoTitle">NYT <span class="CallOut">VARMEN</span> ☀️ <br> I FANTASTISKE ALBIR</h2>
+        <div class="polaroid" id="bilde1">
+          <div class="imageCropper" ><img  src="/Media/basseng.jpg" alt="Bilde av bassengene ved leiligheten."></div>
         </div>
-    </div>
+        <div class="polaroid" id="bilde2">
+          <div class="imageCropper" ><img  src="/Media/uteomrade.jpg" alt="Bilde av buteområdet til leiligheten."></div>
+        </div>
+      </div>
+
+      <div class="infoList">
+        <p class="listItem">3 soverom <br></p>
+        <p class="listItem">Stort uteareal <br></p>
+        <p class="listItem">2 Bad <br></p>
+        <p class="listItem">Vask inkludert i prisen <br></p>
+      </div>
+    
+      <hr>
+
+      <h2 class="highlighted">Priser</h2>
+    
+      <div class="prices">
+        <div class="priceItem item1">
+          <h3>1.Mai - 20. Juni</h3>
+          <p class="price">NOK 8.000,- per uke</p>
+        </div>
+        <div class="priceItem item2">
+          <h3>20. Juni - 20. August</h3>
+          <p class="price">NOK 9.000,- per uke</p>
+        </div>
+        <div class="priceItem item3">
+          <h3>Resten av året</h3>
+          <p class="price">NOK 6.000,- per uke</p>
+        </div>
+        <div class="priceItem item4">
+          <h3>Langtidsleie</h3>
+          <p class="price">NOK 15.000,- per mnd</p>
+          <p class="under">Gjelder ved leie i over 3 mnd.</p>
+        </div>
+      </div>
+  </div>
+
+  <div class="adress">
+    <footer>Viminal Bajo D <br> Bulevard dels Musics 18 <br> 03581 l'Alfàs del Pi, Alacant, España.</footer>
+  </div>
+
 </body>
 </html>

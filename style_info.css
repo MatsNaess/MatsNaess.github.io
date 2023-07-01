@@ -1,0 +1,273 @@
+html {
+  --yellow-accent-color: rgb(248, 184, 64);
+  --grey-border-color: rgb(156, 153, 145);
+  --white-colour-standard: rgb(249, 252, 254);
+  --black-colour-standard: rgba(21, 10, 0, 1);
+  --green-colour-standard: rgba(73, 159, 104,1);
+  --red-colour-standard: rgba(249,112,104,1);
+
+  --font-size-sm: clamp(0.6rem, 0.4vw + 0.5rem, 0.75rem);
+  --font-size-base: clamp(0.75rem, 0.67vw + 0.58rem, 1rem);
+  --font-size-md: clamp(0.94rem, 1.05vw + 0.67rem, 1.33rem);
+  --font-size-lg: clamp(1.17rem, 1.61vw + 0.77rem, 1.78rem);
+  --font-size-xl: clamp(1.46rem, 2.41vw + 0.86rem, 2.37rem);
+  --font-size-xxl: clamp(0.8rem, 4vw, 3.5rem);
+  --font-size-xxxl: clamp(2.29rem, 5.12vw + 1.01rem, 4.21rem);
+}
+
+body {
+  padding-top: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: var(--white-colour-standard);
+  color: var(--black-colour-standard);
+}
+.small {
+  display: none;
+}
+.pageWrapper {
+  width: min(1100px, calc(70% + 100px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Futura-pt', 'Nunito Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+}
+
+h2 {
+  font-size: var(--font-size-xl)
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-family: 'Georgia', 'Tinos', serif;
+  line-height: 1.5;
+  font-size: var(--font-size-base);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img.emoji {
+  height: 5rem;
+  aspect-ratio: 1;
+}
+
+header {
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.otherPage {
+  margin-left: auto;
+}
+
+.inquiry {
+  margin-right: auto;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  padding: 0.7rem 1.1rem 0.7rem 1.1rem;
+  font-size: 0.8rem;
+
+  width: 12rem;
+  height: auto;
+
+}
+ 
+.btnAcc {
+  background-color: var(--yellow-accent-color);
+  border: none;
+  border-radius: 0.4rem;
+}
+
+#plassering {
+  width: 16rem;
+}
+
+.btnNotAcc {
+  border: 2px solid var(--grey-border-color);
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 0.4rem;
+}
+
+.DisplayPictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 5px;
+}
+
+.column {
+  flex: 50%;
+  max-width: 48%;
+  justify-content: space-between;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.info-tekst {
+  display: flex;
+}
+
+.emoji-og-overskrift{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 3rem;
+}
+
+.emoji-og-overskrift > h2 {
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+.tekst-og-knapp {
+  display: flex;
+  flex-direction: column;
+}
+
+.tekst-og-knapp > p {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+
+.lastCTA {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  background-color: var(--black-colour-standard);
+}
+
+.lastCTA > h3 {
+  margin-bottom: 0;
+  padding-bottom: 0.2rem;
+}
+
+.lastCTA > p {
+  margin-top: 0;
+  padding-top: 0.2rem;
+}
+
+.adress{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background-color: var(--green-colour-standard);
+}
+
+button:hover {
+  transform: scale(102%);
+  transition: transform 100ms;
+  outline: var(--black-colour-standard) 2px solid;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 1100px) {
+  .column {
+    flex: 48%;
+    max-width: 48%;
+  }
+
+  button.header{
+    width: 7rem;
+    height: 3rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    font-size: 0.7rem;
+  }
+
+
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 720px) {
+
+  button.header{
+    width: 3rem;
+    height: 3rem;
+    padding 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  h1{
+    font-size: 2rem;
+  }
+
+  .large {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+  
+  .info-tekst {
+    flex-direction: column;
+  }
+
+  .tekst-og-knapp > p {
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tekst-og-knapp {
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .emoji-og-overskrift {
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+}
+
