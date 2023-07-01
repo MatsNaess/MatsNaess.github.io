@@ -397,3 +397,31 @@ button:hover {
   }
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .small {
+    padding: 4px;
+  }
+
+  #infoTitle {
+    font-size: 1.5rem;
+  }
+
+  .imageCropper {
+    width: calc(var(--image-size)*0.55);
+    height: calc(var(--image-size)*0.55);
+  }
+
+  .polaroid {
+    padding: 5px 5px 15px 5px;
+  }
+
+  #bilde1:after, #bilde2:after {
+    font-size: 1rem;
+  }
+
+}
+
