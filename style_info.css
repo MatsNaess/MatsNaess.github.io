@@ -5,6 +5,7 @@ html {
   --black-colour-standard: rgba(21, 10, 0, 1);
   --green-colour-standard: rgba(73, 159, 104,1);
   --red-colour-standard: rgba(249,112,104,1);
+  --footer-colour: rgb(163, 202, 228);
 
   --font-size-sm: clamp(0.6rem, 0.4vw + 0.5rem, 0.75rem);
   --font-size-base: clamp(0.75rem, 0.67vw + 0.58rem, 1rem);
@@ -190,7 +191,10 @@ button {
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
-  background-color: var(--green-colour-standard);
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+
+  background-color: var(--footer-colour);
 }
 
 button:hover {

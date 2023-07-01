@@ -5,6 +5,7 @@ html {
   --black-colour-standard: rgba(21, 10, 0, 1);
   --green-colour-standard: rgba(73, 159, 104,1);
   --red-colour-standard: rgb(207, 48, 40);
+  --footer-colour: rgb(163, 202, 228);
 
   --image-size: 24rem;
 
@@ -16,6 +17,8 @@ html {
   --font-size-xxl: clamp(0.8rem, 4vw, 3.5rem);
   --font-size-xxxl: clamp(2.29rem, 5.12vw + 1.01rem, 4.21rem);
 }
+
+
 
 .small {
   display: none;
@@ -244,7 +247,10 @@ button {
   padding-top: 4rem;
   padding-bottom: 4rem;
   text-align: center;
-  background-color: var(--green-colour-standard);
+  font-family: 'poppins', sans-serif;
+  font-weight: bold;
+
+  background-color: var(--footer-colour);
 }
 
 button:hover {
