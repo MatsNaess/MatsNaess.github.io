@@ -271,6 +271,11 @@ button:hover {
     justify-content: center;
     padding-top: 4rem;
   }
+
+  footer {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
 }
 
 @media (max-width: 500px) {

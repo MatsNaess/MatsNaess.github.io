@@ -403,6 +403,12 @@ button:hover {
     font-weight: 700;
     font-size: var(--font-size-lg);
   }
+
+  footer {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
 }
 
 @media (max-width: 500px) {
