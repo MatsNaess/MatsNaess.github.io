@@ -321,6 +321,15 @@ button:hover {
     text-align: center;
     width: 70%;
   }
+
+  .info-tekst {
+    align-items: center;
+  }
+
+  .tekst-og-knapp {
+    width: 90%;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -358,7 +367,4 @@ button:hover {
     flex: 90%;
   }
 }
-
-
-
 
