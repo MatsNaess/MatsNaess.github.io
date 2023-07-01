@@ -74,13 +74,14 @@ a {
   justify-content: center;
 }
 
+
 #infoTitle {
   flex: 90%;
   font-size: calc(var(--font-size-xl)*2);
   text-decoration-color: var(--green-colour-standard);
   text-decoration-line: underline;
-  text-decoration-style: solid;
   text-decoration-thickness: 8px;
+  text-decoration-style: solid;
   transform: rotate(-1.3deg);
   text-align: center;
   line-height: 1.2;
