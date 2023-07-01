@@ -77,7 +77,10 @@ a {
 #infoTitle {
   flex: 90%;
   font-size: calc(var(--font-size-xl)*2);
-  text-decoration: var(--green-colour-standard) underline 5px;
+  text-decoration-color: var(--green-colour-standard);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 8px;
   transform: rotate(-1.3deg);
   text-align: center;
   line-height: 1.2;
