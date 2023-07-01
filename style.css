@@ -63,8 +63,8 @@ p {
 }
 
 a {
-  text-decoration: none;
-  color: var(--black-colour-standard);
+  color:inherit;
+  text-decoration:none;
 }
 
 .pageHeader {
